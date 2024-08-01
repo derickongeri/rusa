@@ -1,13 +1,22 @@
 {
+<<<<<<< HEAD
   "name": "quasar-project",
   "version": "0.0.1",
   "description": "A Quasar Project",
   "productName": "Quasar App",
   "author": "",
+=======
+  "name": "rusa",
+  "version": "0.0.1",
+  "description": "A meneopause sign tracking app for african women",
+  "productName": "com.rusaapp.www",
+  "author": "derickongeri <derickongeri@gmail.com>",
+>>>>>>> dd584b2becd4cec6727fd98c33411a874e44f9c5
   "private": true,
   "scripts": {
     "test": "echo \"No test specified\" && exit 0",
     "dev": "quasar dev",
+<<<<<<< HEAD
     "build": "quasar build"
   },
   "dependencies": {
@@ -22,6 +31,26 @@
   },
   "devDependencies": {
     "@quasar/app-webpack": "^3.13.0"
+=======
+    "build": "quasar build",
+    "icon": "icongenie generate -i AppIcon.png --skip-trim --background SplashScreen.png --theme-color 697523"
+  },
+  "dependencies": {
+    "@capacitor/splash-screen": "^6.0.1",
+    "@capacitor/status-bar": "^6.0.0",
+    "@quasar/extras": "^1.16.4",
+    "axios": "^1.2.1",
+    "core-js": "^3.6.5",
+    "date-fns": "^3.6.0",
+    "pinia": "^2.0.11",
+    "quasar": "^2.6.0",
+    "vue": "^3.0.0",
+    "vue-i18n": "^9.0.0",
+    "vue-router": "^4.0.0"
+  },
+  "devDependencies": {
+    "@quasar/app-webpack": "^3.0.0"
+>>>>>>> dd584b2becd4cec6727fd98c33411a874e44f9c5
   },
   "browserslist": [
     "last 10 Chrome versions",
@@ -35,8 +64,16 @@
     "last 5 Opera versions"
   ],
   "engines": {
+<<<<<<< HEAD
     "node": "^20 || ^18 || ^16",
     "npm": ">= 6.13.4",
     "yarn": ">= 1.21.1"
   }
 }
+=======
+    "node": ">= 12.22.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}
+>>>>>>> dd584b2becd4cec6727fd98c33411a874e44f9c5
