@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+const routes = [
+  {
+    path: '/',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/IndexPage.vue') }
+    ]
+=======
 
 const routes = [
   {
@@ -62,14 +71,22 @@ const routes = [
         meta: { title: "Log Sings" },
       },
     ],
+>>>>>>> dd584b2becd4cec6727fd98c33411a874e44f9c5
   },
 
   // Always leave this as last one,
   // but you can also remove it
   {
+<<<<<<< HEAD
+    path: '/:catchAll(.*)*',
+    component: () => import('pages/ErrorNotFound.vue')
+  }
+]
+=======
     path: "/:catchAll(.*)*",
     component: () => import("pages/ErrorNotFound.vue"),
   },
 ];
+>>>>>>> dd584b2becd4cec6727fd98c33411a874e44f9c5
 
 export default routes

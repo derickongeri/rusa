@@ -1,5 +1,20 @@
 <template>
   <q-page class="flex flex-center">
+<<<<<<< HEAD
+    <img
+      alt="Quasar logo"
+      src="~assets/quasar-logo-vertical.svg"
+      style="width: 200px; height: 200px"
+    >
+  </q-page>
+</template>
+
+<script setup>
+defineOptions({
+  name: 'IndexPage'
+});
+</script>
+=======
     <q-carousel
       v-model="slide"
       swipeable
@@ -147,3 +162,4 @@ export default defineComponent({
   background-color: #f8f9f4;
 }
 </style>
+>>>>>>> dd584b2becd4cec6727fd98c33411a874e44f9c5

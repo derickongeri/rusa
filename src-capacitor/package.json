@@ -1,4 +1,17 @@
 {
+<<<<<<< HEAD
+  "name": "quasar-project",
+  "version": "0.0.1",
+  "description": "A Quasar Project",
+  "private": true,
+  "dependencies": {
+    "@capacitor/app": "^6.0.0",
+    "@capacitor/cli": "^6.0.0",
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/ios": "^6.1.0"
+  },
+  "author": ""
+=======
   "name": "rusa",
   "version": "0.0.1",
   "description": "A meneopause sign tracking app for african women",
@@ -10,4 +23,5 @@
     "@capacitor/cli": "^6.0.0",
     "@capacitor/core": "^6.0.0"
   }
+>>>>>>> dd584b2becd4cec6727fd98c33411a874e44f9c5
 }

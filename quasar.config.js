@@ -8,7 +8,12 @@
 // Configuration for your app
 // https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js
 
+<<<<<<< HEAD
+
+const { configure } = require('quasar/wrappers');
+=======
 const { configure } = require("quasar/wrappers");
+>>>>>>> dd584b2becd4cec6727fd98c33411a874e44f9c5
 
 module.exports = configure(function (ctx) {
   return {
@@ -21,28 +26,53 @@ module.exports = configure(function (ctx) {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     // https://v2.quasar.dev/quasar-cli-webpack/boot-files
+<<<<<<< HEAD
+    boot: [
+      'i18n',
+      'axios',
+    ],
+
+    // https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js#Property%3A-css
+    css: [
+      'app.scss'
+    ],
+=======
     boot: ["i18n", "axios", "splashscreen"],
 
     // https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js#Property%3A-css
     css: ["app.scss"],
+>>>>>>> dd584b2becd4cec6727fd98c33411a874e44f9c5
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
     extras: [
       // 'ionicons-v4',
+<<<<<<< HEAD
+      // 'mdi-v7',
+=======
       "mdi-v6",
+>>>>>>> dd584b2becd4cec6727fd98c33411a874e44f9c5
       // 'fontawesome-v6',
       // 'eva-icons',
       // 'themify',
       // 'line-awesome',
       // 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
 
+<<<<<<< HEAD
+      'roboto-font', // optional, you are not bound to it
+      'material-icons', // optional, you are not bound to it
+=======
       "roboto-font", // optional, you are not bound to it
       "material-icons", // optional, you are not bound to it
+>>>>>>> dd584b2becd4cec6727fd98c33411a874e44f9c5
     ],
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js#Property%3A-build
     build: {
+<<<<<<< HEAD
+      vueRouterMode: 'hash', // available values: 'hash', 'history'
+=======
       vueRouterMode: "hash", // available values: 'hash', 'history'
+>>>>>>> dd584b2becd4cec6727fd98c33411a874e44f9c5
 
       // transpile: false,
       // publicPath: '/',
@@ -63,17 +93,30 @@ module.exports = configure(function (ctx) {
 
       // https://v2.quasar.dev/quasar-cli-webpack/handling-webpack
       // "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain
+<<<<<<< HEAD
+      
+      chainWebpack (/* chain */) {}
+      
+=======
 
       chainWebpack(/* chain */) {},
+>>>>>>> dd584b2becd4cec6727fd98c33411a874e44f9c5
     },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js#Property%3A-devServer
     devServer: {
       server: {
+<<<<<<< HEAD
+        type: 'http'
+      },
+      port: 8080,
+      open: true // opens browser window automatically
+=======
         type: "http",
       },
       port: 8080,
       open: true, // opens browser window automatically
+>>>>>>> dd584b2becd4cec6727fd98c33411a874e44f9c5
     },
 
     // https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js#Property%3A-framework
@@ -91,7 +134,11 @@ module.exports = configure(function (ctx) {
       // directives: [],
 
       // Quasar plugins
+<<<<<<< HEAD
+      plugins: []
+=======
       plugins: ["Dialog"],
+>>>>>>> dd584b2becd4cec6727fd98c33411a874e44f9c5
     },
 
     // animations: 'all', // --- includes all animations
@@ -106,6 +153,21 @@ module.exports = configure(function (ctx) {
       // manualPostHydrationTrigger: true,
 
       prodPort: 3000, // The default port that the production server should use
+<<<<<<< HEAD
+                      // (gets superseded if process.env.PORT is specified at runtime)
+
+      maxAge: 1000 * 60 * 60 * 24 * 30,
+        // Tell browser when a file from the server should expire from cache (in ms)
+
+      
+      chainWebpackWebserver (/* chain */) {},
+      
+
+      middlewares: [
+        ctx.prod ? 'compression' : '',
+        'render' // keep this as last one
+      ]
+=======
       // (gets superseded if process.env.PORT is specified at runtime)
 
       maxAge: 1000 * 60 * 60 * 24 * 30,
@@ -117,15 +179,62 @@ module.exports = configure(function (ctx) {
         ctx.prod ? "compression" : "",
         "render", // keep this as last one
       ],
+>>>>>>> dd584b2becd4cec6727fd98c33411a874e44f9c5
     },
 
     // https://v2.quasar.dev/quasar-cli-webpack/developing-pwa/configuring-pwa
     pwa: {
+<<<<<<< HEAD
+      workboxPluginMode: 'GenerateSW', // 'GenerateSW' or 'InjectManifest'
+=======
       workboxPluginMode: "GenerateSW", // 'GenerateSW' or 'InjectManifest'
+>>>>>>> dd584b2becd4cec6727fd98c33411a874e44f9c5
       workboxOptions: {}, // only for GenerateSW
 
       // for the custom service worker ONLY (/src-pwa/custom-service-worker.[js|ts])
       // if using workbox in InjectManifest mode
+<<<<<<< HEAD
+      
+      chainWebpackCustomSW (/* chain */) {},
+      
+
+      manifest: {
+        name: `Quasar App`,
+        short_name: `Quasar App`,
+        description: `A Quasar Project`,
+        display: 'standalone',
+        orientation: 'portrait',
+        background_color: '#ffffff',
+        theme_color: '#027be3',
+        icons: [
+          {
+            src: 'icons/icon-128x128.png',
+            sizes: '128x128',
+            type: 'image/png'
+          },
+          {
+            src: 'icons/icon-192x192.png',
+            sizes: '192x192',
+            type: 'image/png'
+          },
+          {
+            src: 'icons/icon-256x256.png',
+            sizes: '256x256',
+            type: 'image/png'
+          },
+          {
+            src: 'icons/icon-384x384.png',
+            sizes: '384x384',
+            type: 'image/png'
+          },
+          {
+            src: 'icons/icon-512x512.png',
+            sizes: '512x512',
+            type: 'image/png'
+          }
+        ]
+      }
+=======
 
       chainWebpackCustomSW(/* chain */) {},
 
@@ -165,6 +274,7 @@ module.exports = configure(function (ctx) {
           },
         ],
       },
+>>>>>>> dd584b2becd4cec6727fd98c33411a874e44f9c5
     },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-webpack/developing-cordova-apps/configuring-cordova
@@ -174,20 +284,36 @@ module.exports = configure(function (ctx) {
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-webpack/developing-capacitor-apps/configuring-capacitor
     capacitor: {
+<<<<<<< HEAD
+      hideSplashscreen: true
+=======
       hideSplashscreen: true,
+>>>>>>> dd584b2becd4cec6727fd98c33411a874e44f9c5
     },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-webpack/developing-electron-apps/configuring-electron
     electron: {
+<<<<<<< HEAD
+      bundler: 'packager', // 'packager' or 'builder'
+
+      packager: {
+        // https://github.com/electron-userland/electron-packager/blob/master/docs/api.md#options
+
+=======
       bundler: "packager", // 'packager' or 'builder'
 
       packager: {
         // https://github.com/electron-userland/electron-packager/blob/master/docs/api.md#options
+>>>>>>> dd584b2becd4cec6727fd98c33411a874e44f9c5
         // OS X / Mac App Store
         // appBundleId: '',
         // appCategoryType: '',
         // osxSign: '',
         // protocol: 'myapp://path',
+<<<<<<< HEAD
+
+=======
+>>>>>>> dd584b2becd4cec6727fd98c33411a874e44f9c5
         // Windows only
         // win32metadata: { ... }
       },
@@ -195,6 +321,21 @@ module.exports = configure(function (ctx) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
+<<<<<<< HEAD
+        appId: 'quasar-project'
+      },
+
+      // "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain
+      
+      chainWebpackMain (/* chain */) {},
+      
+
+      
+      chainWebpackPreload (/* chain */) {},
+      
+    }
+  }
+=======
         appId: "rusa",
       },
 
@@ -205,4 +346,5 @@ module.exports = configure(function (ctx) {
       chainWebpackPreload(/* chain */) {},
     },
   };
+>>>>>>> dd584b2becd4cec6727fd98c33411a874e44f9c5
 });
